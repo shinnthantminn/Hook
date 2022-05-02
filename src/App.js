@@ -1,19 +1,15 @@
-import Safe from './Components/Safe.jsx'
-import UnSafe from './Components/UnSafe.jsx'
+import SetStateSecondParameter from './Components/SetStateSecondParameter'
+import SpreadWithUseState from './Components/SpreadWithUseState'
 
 function App() {
   return (
-    <div
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        flexDirection: 'column',
-      }}
-    >
-      <h1>useState Hook safe and unsafe</h1>
-      <Safe />
-      <UnSafe />
-    </div>
+    <>
+      <h1>SpreadWithUseState</h1>
+      <SpreadWithUseState />
+      <hr />
+      <h1>SetStateSecondParameter</h1>
+      <SetStateSecondParameter />
+    </>
   )
 }
 
