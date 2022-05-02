@@ -16,9 +16,9 @@ export default class ClassComponents extends Component {
   } // Components တစ်ခု စတင်တည်ဆောက်တဲ့အခါမှာ တစ်ခါပဲ အလုပ်လုပ်ပါတယ်
 
   componentDidUpdate(preProps, preState) {
-    if (preState.name !== this.state.name) {
-      console.log('hello i am components update depend by variable')
-    }
+    // if (preState.name !== this.state.name) {
+    //   console.log('hello i am components update depend by variable')
+    // }
     console.log('hello i am components update')
   } // Components Update လုပ်တိုင်းအလုပ်လုပ်ပါတယ်
 
