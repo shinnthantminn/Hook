@@ -1,15 +1,9 @@
-// import ClassComponents from './Components/ClassComponents'
-
-import FunctionalComponents from './Components/FunctionalComponents'
-import Testing from './Components/Testing'
+import ComponentsOne from './Components/ComponentsOne'
 
 function App() {
   return (
     <>
-      <h1>useEffect Hook</h1>
-      {/* <ClassComponents /> */}
-      <FunctionalComponents />
-      <Testing />
+      <ComponentsOne />
     </>
   )
 }
