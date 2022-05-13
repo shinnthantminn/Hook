@@ -1,37 +1,18 @@
-import React, { useReducer } from 'react'
-
-let initialState = 0
-
-const countReducer = (state, action) => {
-  switch (action.type) {
-    case 'add':
-      return state + action.payload
-    default:
-      return state
-  }
-}
+import React, { useContext } from 'react'
+import { context } from '../App'
 
 function ComponentsOne() {
-  const [state1, dispatch1] = useReducer(countReducer, initialState)
-  const [state2, dispatch2] = useReducer(countReducer, initialState)
-
+  const state = useContext(context)
+  console.log(state.dispatch)
   return (
     <div>
-      <p>Count1:{state1}</p>
-      <p>Count1:{state2}</p>
+      <p>{state.state}</p>
       <button
         onClick={() => {
-          dispatch1({ type: 'add', payload: 1 })
+          state.dispatch({ type: 'add', payload: 1 })
         }}
       >
-        Click1
-      </button>
-      <button
-        onClick={() => {
-          dispatch2({ type: 'add', payload: 1 })
-        }}
-      >
-        Click2
+        click in ComponentsOne
       </button>
     </div>
   )
