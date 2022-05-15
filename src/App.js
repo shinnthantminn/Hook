@@ -1,9 +1,12 @@
-import Usefull from './Components/Usefull'
+import React from 'react'
+import ClassOne from './Components/ClassOne'
+import ParentsComponents from './Components/ParentsComponents'
 
 function App() {
   return (
     <div>
-      <Usefull />
+      <ParentsComponents />
+      <ClassOne />
     </div>
   )
 }
