@@ -1,11 +1,9 @@
-import ComponentsOne from './Components/ComponentsOne'
-import ComponentsTwo from './Components/ComponentsTwo'
+import InputComponents from './Components/InputComponents'
 
 function App() {
   return (
     <div>
-      <ComponentsOne />
-      <ComponentsTwo />
+      <InputComponents />
     </div>
   )
 }
