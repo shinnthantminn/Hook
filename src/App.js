@@ -1,4 +1,3 @@
-import React from 'react'
 import ComponentsOne from './Components/ComponentsOne'
 import ComponentsTwo from './Components/ComponentsTwo'
 

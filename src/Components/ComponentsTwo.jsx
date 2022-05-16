@@ -1,15 +1,13 @@
-import React, { useState } from 'react'
-import useTitleChange from './Helper/useTitleChange'
+import useCounter from './Helper/useCounter'
 
 function ComponentsTwo() {
-  const [count, setCount] = useState(0)
-  useTitleChange(count)
-  const handleCount = () => {
-    setCount((pre) => pre + 1)
-  }
+  const [count, increase, decrease, reset] = useCounter(15, 5)
   return (
     <div>
-      <button onClick={handleCount}>Click</button>
+      <h1>Count is {count}</h1>
+      <button onClick={increase}>incrase</button>
+      <button onClick={decrease}>decrease</button>
+      <button onClick={reset}>reset</button>
     </div>
   )
 }
