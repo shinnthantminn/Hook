@@ -1,12 +1,12 @@
 import React from 'react'
-import ClassOne from './Components/ClassOne'
-import ParentsComponents from './Components/ParentsComponents'
+import ComponentsOne from './Components/ComponentsOne'
+import ComponentsTwo from './Components/ComponentsTwo'
 
 function App() {
   return (
     <div>
-      <ParentsComponents />
-      <ClassOne />
+      <ComponentsOne />
+      <ComponentsTwo />
     </div>
   )
 }
